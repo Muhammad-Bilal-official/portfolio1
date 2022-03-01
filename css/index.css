@@ -115,3 +115,19 @@
     background-color: rgb(65, 13, 13);
 
 }
+
+/* project Cards CSS */
+
+.projectCards{
+    /* border: 2px solid rgb(138, 136, 136); */
+    border-radius: 15px;
+    margin: 5px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: fit-content;
+    padding: 15px;
+}
+a {
+  height: fit-content;  
+}
+
