@@ -296,3 +296,27 @@ contactButton.addEventListener("click",()=>{
 addressButton.addEventListener("click",()=>{
     mainContentContainer.innerHTML = addressPageContent;
 });
+function showHideMenu(event){
+    console.log(event);
+    let menu = document.querySelector("#sideBar");
+    let showButton = document.querySelector("#showButton");
+    let closeButton = document.querySelector("#closeButton");
+    // let mainContentContainer = document.querySelector("#mainContentContainer");
+    showButton.classList.toggle("d-block");
+    closeButton.classList.toggle("d-block");
+    if(event === "show"){
+        // showButton.classList.add("d-none");
+        // closeButton.classList.add("d-block");
+        menu.style.width = "15%";
+        showButton.style.zIndex = "0";
+    }
+    else{
+        // showButton.classList.add("d-block");
+        // closeButton.classList.add("d-none");
+        menu.style.width = "0%";
+        showButton.style.zIndex = "2";
+        // mainContentContainer.style.margin = "auto";
+
+    }
+
+}
